@@ -22,9 +22,10 @@ while n <= m:
 #  Программу реализовать при помощи цикла while.
 
 f = float(input("Введи вещественное число_ "))
-c = 0
-d = 0
+c = f
+d = 1
 while d != 10 :
     d +=1
-    c +=f
+    c = c + f
     print(round(c,2), end=" ")
+    print(d)
