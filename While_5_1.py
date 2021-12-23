@@ -25,6 +25,6 @@ f = float(input("Введи вещественное число_ "))
 c = f
 d = 1
 while d != 10 :
-    d +=1
+    d += 1
     c = c + f
     print(round(c,2), end=" ")
