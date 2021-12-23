@@ -1,11 +1,8 @@
-print('раз\tдва\tтри\nuno\tdos\ttres')
 
-f = 34.6
-c = f
-d = 1
-while d != 10 :
-    d +=1
-    c = c + f
-
-    print(round(c,2), end=" ")
-    print(d)
+f = int(input("Введи  число например 10_ "))
+c = 0
+d = 0
+while d != f :
+    d += 1
+    c += 1/d
+print(round(c,3))
