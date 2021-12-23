@@ -5,5 +5,3 @@ while i <= N and s <= 100:
     s +=1
     i +=1
 print(s,i)
-jhjhgj
-mvhgfhjgjhg
