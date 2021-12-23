@@ -35,6 +35,8 @@ print(1,2,3, sep=",", end= ': ')
 print(1,2,3, sep=",", end= ' ')
 print("sdfgh")
 
+#управляющие символы
+print('раз\tдва\tтри\nuno\tdos\ttres')
 
 import math
 n = 6
