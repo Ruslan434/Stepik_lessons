@@ -28,3 +28,4 @@ while d != 10 :
     d += 1
     c = c + f
     print(round(c,2), end=" ")
+    print(d)
