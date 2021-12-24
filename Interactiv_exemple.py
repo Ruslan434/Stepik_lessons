@@ -3,10 +3,9 @@
 # Результат преобразования строки выведите на экран.
 # Программу реализовать при помощи цикла while.
 
-
 #f = str(input())
 f = "osnovnye---------metody------------------slovarey"
 #while f.count("-") != 2 :
-while "--" in f != "-":
+while "--" in:
     f = f.replace("--", "-")
-    print(f)
+print(f)
