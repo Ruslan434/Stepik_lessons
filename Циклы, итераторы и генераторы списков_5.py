@@ -47,6 +47,6 @@ print(d)
 
 #f = str(input())
 f = "osnovnye---------metody------------------slovarey"
-while "--" in:
+while "--" in f:
     f = f.replace("--", "-")
 print(f)
