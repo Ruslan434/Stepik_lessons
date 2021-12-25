@@ -82,3 +82,60 @@ print(d)
 
 n = int(input("Ввести значение в диапазоне [0 : 59]   "))
 print((n + 1) % 60)
+
+number = 23
+guess = int(input('Введите целое число : '))
+if guess == number:
+    print('Поздравляю, вы угадали,') # Начало нового блока
+    print('(хотя и не выиграли никакого приза!)') # Конец нового блока
+elif guess < number:
+    print('Нет, загаданное число немного больше этого.') # Ещё один блок
+    # Внутри блока вы можете выполнять всё, что угодно ...
+else:
+    print('Нет, загаданное число немного меньше этого.')
+# чтобы попасть сюда, guess должно быть больше, чем number
+
+
+#d = 'Шалаш'
+#d = d.lower()
+d = input().lower()
+if d == d[::-1]:
+    print("ДА")
+else:
+    print("НЕТ")
+
+
+
+m,n = map(int,input('вписать 2 цифры через пробел: ').split())
+if m % n == 0 :
+       print (int(m/n))
+else:
+    print(f'{m} на {n} нацело не делится')
+
+m,n = map(int,input("Введи дату месяц и день в одну строчку через пробел (например < 2 28 >__ ")").split())
+if 2 <= n <= 27 and m == 2 :
+    print(str(m).rjust(2,'0') + "." + str(n - 1).rjust(2,"0"),str(m).rjust(2,'0') + "." + str(n + 1).rjust(2,"0"), sep=' ')
+elif n == 1 and m == 2:
+    print(str(m - 1).rjust(2,'0') + "." + str(31).rjust(2,"0"),str(m).rjust(2,'0') + "." + str(n + 1).rjust(2,"0"), sep=' ')
+elif n == 1 and m == 1:
+    print(str(12).rjust(2,'0') + "." + str(31).rjust(2,"0"),str(m).rjust(2,'0') + "." + str(n + 1).rjust(2,"0"), sep=' ')
+elif n == 31 and m == 12:
+    print(str(m).rjust(2,'0') + "." + str(n -1).rjust(2,"0"),str(1).rjust(2,'0') + "." + str(1).rjust(2,"0"), sep=' ')
+elif n == 1 and (m == 4 or m == 6 or m == 9 or m == 11 or m == 8):
+    print(str(m - 1).rjust(2,'0') + "." + str(31).rjust(2,"0"),str(m).rjust(2,'0') + "." + str(n + 1).rjust(2,"0"), sep=' ')
+elif n == 1 and ( m == 5 or m == 7  or m == 10 or m == 12):
+    print(str(m - 1).rjust(2,'0') + "." + str(30).rjust(2,"0"),str(m).rjust(2,'0') + "." + str(n + 1).rjust(2,"0"), sep=' ')
+elif n == 1 and m == 3 :
+    print(str(m - 1).rjust(2,'0') + "." + str(28).rjust(2,"0"),str(m).rjust(2,'0') + "." + str(n + 1).rjust(2,"0"), sep=' ')
+elif n == 28 and m == 2:
+    print(str(m).rjust(2,'0') + "." + str(n - 1).rjust(2,"0"),str(m + 1).rjust(2,'0') + "." + str(1).rjust(2,"0"), sep=' ')
+elif 2 <= n <= 29 and (m == 4 or m == 6 or m == 9 or m == 11) :
+    print(str(m).rjust(2,'0') + "." + str(n - 1).rjust(2,"0"),str(m).rjust(2,'0') + "." + str(n + 1).rjust(2,"0"), sep=' ')
+elif n == 30 and (m == 4 or m == 6 or m == 9 or m == 11):
+    print(str(m).rjust(2,'0') + "." + str(n - 1).rjust(2,"0"),str(m + 1).rjust(2,'0') + "." + str( 1).rjust(2,"0"), sep=' ')
+elif 2 <= n <= 30 and (m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12) :
+    print(str(m).rjust(2,'0') + "." + str(n - 1).rjust(2,"0"),str(m).rjust(2,'0') + "." + str(n + 1).rjust(2,"0"),sep=' ')
+elif n == 31 and (m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 ):
+    print(str(m).rjust(2,'0') + "." + str(n - 1).rjust(2,"0"),str(m + 1).rjust(2,'0') + "." + str(1).rjust(2,"0"), sep=' ')
+else:
+    print("Ошибка мать твою, пиши правильно дату")
