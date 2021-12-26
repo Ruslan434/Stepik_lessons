@@ -1,7 +1,9 @@
-a = list(map(int, input()))
-b = 0
-d = 1
-while b != len(a) :
-      d = d * a[(b)]
-      b += 1
-print(d)
+a = int(input())
+v = 1
+x = 1
+print(v,x, end=" ")
+while a > 2:
+      v,x = x, v + x
+      print(x, end=" ")
+      a = a - 1
+
