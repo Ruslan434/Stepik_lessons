@@ -1,16 +1,10 @@
-p = 1
-z = 1
-while z :
-    z = int(input("вводи целые числа по очереди "))
-    if z == 0:
-        break
-    elif z < 0:
+p = [0] * 10
+while sum(p) < 5 :
+    z = int(input("вводи целые числа по очереди от 0 до 9_"))
+    if p[z] == 1:
         continue
-
-    p = p * z
-else:
-    print('так работают операторы continue, break, else')
-print(p)
+    p[z] = 1
+print(*p)
 
 
 
