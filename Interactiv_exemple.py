@@ -1,8 +1,11 @@
-#a,b = map(int,input().split())
-a = 100
-b = 1000
-while(a <= b):
-    if(a % 47 == 43 and a % 3 == 0):
-        print(a,end = " ")
-    a+=1
-print("\n\n231 372 513 654 795 936 - правильный ответ.")
+p = [0] * 10
+while sum(p) < 5 :
+    z = int(input("вводи целые числа по очереди_ от 0 до 9"))
+    if 0 <= z <= 9:
+        if p[z] == 1:
+            continue
+        p[z] = 1
+print(*p)
+
+
+
