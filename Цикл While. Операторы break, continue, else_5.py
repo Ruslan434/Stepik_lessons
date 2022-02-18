@@ -337,3 +337,4 @@ for i in range(len(s)-1) :
         else:
             h.append("Нет")
 print('ДА' if h.count("Да") == len(s)-1 else 'НЕТ')
+
