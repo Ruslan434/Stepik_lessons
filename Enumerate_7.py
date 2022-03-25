@@ -63,3 +63,17 @@ lst = list(map(str,input().split()))
 for i, value in enumerate(lst):
     lst[i] = value + " " + value
 print(*lst)
+
+#Подвиг 6. Вводится список в виде вещественных чисел в одну строку через пробел.
+# С помощью цикла for необходимо найти наименьшее значение в этом списке.
+# Полученный результат вывести на экран.  Реализовать программу без использования
+# функции min, max и сортировки.
+#Sample Input:
+#8.6 9.11 -4.567 -10.0 1.45
+lst = list(map(float,input().split()))
+c = 0
+for i, value in enumerate(lst):
+    if value < lst[i-1]:
+        c = value
+
+print(c)
