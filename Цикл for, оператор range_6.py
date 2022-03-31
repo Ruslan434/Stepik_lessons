@@ -127,3 +127,10 @@ if len(pf) == 16:
 else:
     d += ['ДА']
 print("ДА" if len(d) == 10 else "НЕТ")
+
+#Итератор и итерируемые объекты
+#введи в строку через пробел Москва Лондон Берлин Пекин
+lst = list(map(str,input().split()))
+f = iter(lst)
+print(next(f))
+print(next(f))
