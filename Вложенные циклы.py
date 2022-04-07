@@ -42,3 +42,23 @@ for i in range(0,n):
 for t in r:
     print(*t)
 
+#Подвиг 2. Вводится список из URL-адресов (каждый с новой строки).
+# Требуется в них заменить все пробелы на символ дефиса (-).
+# Следует учесть, что может быть несколько подряд идущих пробелов.
+# Результат преобразования вывести на экран в виде строк из URL-адресов.
+#P. S. Для считывания списка целиком в программе уже записаны начальные строчки.
+
+#import sys
+# считывание списка из входного потока
+#lst_in = list(map(str.strip, sys.stdin.readlines()))
+# здесь продолжайте программу (используйте список lst_in)
+lst_in = ['django chto  eto takoe    poryadok ustanovki', 'model mtv   marshrutizaciya funkcii  predstavleniya', 'marshrutizaciya  obrabotka isklyucheniy       zaprosov perenapravleniya']
+for i, probel  in enumerate(lst_in):
+    while probel.count("   ") or probel.count("  "):
+        probel = probel.replace("   "," ")
+        probel = probel.replace("  ", " ")
+    while probel.count(" "):
+        probel = probel.replace(" ", "-")
+    lst_in[i] = probel
+for y in lst_in:
+    print(y)
