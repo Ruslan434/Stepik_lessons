@@ -122,3 +122,20 @@ for i in range(len(lst_in)):
             c = "НЕТ"
             break
 print(c)
+
+# Сколько шеститибуквенных слов, начинающихся и заканчивающихся,
+# согласной буквой и содержащей ровно 2 гласные можно стоставить из букв
+# Т,Ы,К,В,А ? Каждая из допустимых букв может входить в слово несколько раз
+t = 0
+for b1 in 'tukva':
+    for b2 in 'tukva':
+        for b3 in 'tukva':
+            for b4 in 'tukva':
+                for b5 in 'tukva':
+                    for b6 in 'tukva':
+                        slovo = b1 + b2 + b3 + b4 + b5 + b6
+                        if slovo[0] in 'tkv' and slovo[-1] in 'tkv':
+                            if slovo.count("u") + slovo.count("a") == 2:
+                                t += 1
+                                print(slovo)
+print(t)
