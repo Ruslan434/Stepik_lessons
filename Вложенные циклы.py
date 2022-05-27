@@ -201,6 +201,7 @@ for i in l:
 for k in c:
     print(*k, end= " ")
 
+
 #красивое решение
 n = int(input())
 coin = [64, 32, 16, 8, 4, 2, 1]
@@ -209,3 +210,13 @@ for i in coin:
     while n >= i:
         print(i, end=' ')
         n -= i
+print()
+
+        # Изменение значения главной дигонали
+c_1 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+
+for i in range(len(c_1)):
+    for o in range(len(c_1)):
+        if c_1[i] == c_1[o]:
+            c_1[i][o] = 1
+print(c_1)
